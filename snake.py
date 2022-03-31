@@ -11,8 +11,8 @@ red = (213, 50, 80)
 green = (0, 255, 0)
 blue = (50, 153, 213)
  
-dis_width = 800
-dis_height = 600
+dis_width = 1500
+dis_height = 800
  
 dis = pygame.display.set_mode((dis_width, dis_height))
 pygame.display.set_caption('Nokia-Snake game created by shivraj anand')
@@ -20,7 +20,7 @@ pygame.display.set_caption('Nokia-Snake game created by shivraj anand')
 clock = pygame.time.Clock()
  
 snake_block = 10
-snake_speed = 15
+snake_speed = 200
  
 font_style = pygame.font.SysFont("bahnschrift", 25)
 score_font = pygame.font.SysFont("comicsansms", 35)
@@ -78,6 +78,7 @@ def gameLoop():
             if event.type == pygame.QUIT:
                 game_over = True
             if event.type == pygame.KEYDOWN:
+            # if event.type == pygame.K_w:
                 if event.key == pygame.K_LEFT:
                     x1_change = -snake_block
                     y1_change = 0
