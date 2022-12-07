@@ -22,7 +22,8 @@ if __name__ == '__main__':
     low = int(input("Enter lower limit of range: "))
     high = int(input("Enter higher limit of range: "))
 
-    last = 0
+    last = 00
+    
     x = 0
     rlist = []
     xlist = []

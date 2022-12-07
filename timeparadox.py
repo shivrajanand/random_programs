@@ -7,7 +7,7 @@ traveler_born = True
 time_machine_created = True
 go_to_past = True
 killed_grandfather = True
-who_killed_grandfather = 0 #0 means we dont know 1 means we know
+who_killed_grandfather = 1 #0 means we dont know 1 means we knowsubtitle
 
 while loop_count != 10:
     if traveler_born:
